@@ -60,9 +60,11 @@
   (make-local-variable 'comment-start-skip)
   (setq comment-start-skip "//[ \t]*")
   (make-local-variable 'comment-column)
-  (setq comment-column 0))
-
-(global-set-key (kbd "C-\") (lambda () (interactive) (insert "λ")))
+  (setq comment-column 0)
+  (define-key morganey-mode-map
+    (kbd "C-\")
+    (lambda () (interactive) (insert "λ"))
+  ))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.mgn\\'" . morganey-mode))
