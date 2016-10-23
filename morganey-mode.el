@@ -62,7 +62,7 @@
   (make-local-variable 'comment-column)
   (setq comment-column 0)
   (define-key morganey-mode-map
-    (kbd "C-\")
+    (kbd "C-\\")
     (lambda () (interactive) (insert "λ"))
   ))
 
