@@ -63,8 +63,7 @@
   (setq comment-column 0)
   (define-key morganey-mode-map
     (kbd "C-\\")
-    (lambda () (interactive) (insert "λ"))
-  ))
+    (lambda () (interactive) (insert "λ"))))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.mgn\\'" . morganey-mode))
