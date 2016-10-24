@@ -53,14 +53,12 @@
   (set-syntax-table morganey--syntax-table)
 
   (setq font-lock-defaults '(morganey--keywords))
-  (make-local-variable 'comment-start)
-  (setq comment-start "// ")
-  (make-local-variable 'comment-end)
-  (setq comment-end "")
-  (make-local-variable 'comment-start-skip)
-  (setq comment-start-skip "//[ \t]*")
-  (make-local-variable 'comment-column)
-  (setq comment-column 0)
+
+  (set (make-local-variable 'comment-start) "// ")
+  (set (make-local-variable 'comment-end) "")
+  (set (make-local-variable 'comment-start-skip) "//[ \t]*")
+  (set (make-local-variable 'comment-column) 0)
+
   (define-key morganey-mode-map
     (kbd "C-\\")
     (lambda () (interactive) (insert "λ"))))
