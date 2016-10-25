@@ -1,3 +1,14 @@
 * morganey-mode
 
   Morganey Mode for Emacs
+
+* Building and Testing
+
+  You need to install [[http://cask.readthedocs.io/en/latest/][cask]] first.
+
+  #+BEGIN_SRC
+  $ cd morganey-mode
+  $ cask install
+  $ cask exec ert-runner
+  $ cask package
+  #+END_SRC
