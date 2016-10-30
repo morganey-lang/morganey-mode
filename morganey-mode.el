@@ -48,6 +48,7 @@
     (modify-syntax-entry ?\n ">" table)
     table))
 
+;;;###autoload
 (define-derived-mode morganey-mode prog-mode "Morganey"
   "Major mode for editing Morganey files"
   (set-syntax-table morganey--syntax-table)
