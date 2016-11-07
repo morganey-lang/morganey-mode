@@ -37,6 +37,7 @@
 
 (defconst morganey--keywords
   (list (cons "load" font-lock-keyword-face)
+        (cons "def" font-lock-keyword-face)
         (cons ":=" font-lock-keyword-face)
         (cons "\\\\" font-lock-keyword-face)
         (cons "λ" font-lock-keyword-face)))
