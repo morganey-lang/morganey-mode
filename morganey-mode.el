@@ -59,11 +59,7 @@
   (set (make-local-variable 'comment-start) "// ")
   (set (make-local-variable 'comment-end) "")
   (set (make-local-variable 'comment-start-skip) "//[ \t]*")
-  (set (make-local-variable 'comment-column) 0)
-
-  (define-key morganey-mode-map
-    (kbd "C-\\")
-    (lambda () (interactive) (insert "λ"))))
+  (set (make-local-variable 'comment-column) 0))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.mgn\\'" . morganey-mode))
