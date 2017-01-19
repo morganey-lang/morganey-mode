@@ -1,3 +1,5 @@
+[[https://melpa.org/#/morganey-mode][file:https://melpa.org/packages/morganey-mode-badge.svg]]
+
 * morganey-mode
 
   Morganey Mode for Emacs
